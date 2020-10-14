@@ -1,0 +1,34 @@
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #852D91;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #852D91;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #852D91;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #852D91;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #852D91;
+}
+
+::-ms-input-placeholder {
+  color: #852D91;
+}
+/*# sourceMappingURL=common.css.map */

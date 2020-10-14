@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/home.css">
 </head>
@@ -10,11 +12,14 @@
     <div class="fluid-container">
         <div class="menu row m-0">
             <div class="d-flex align-items-center">
+                <button class="menu-button"><img src="./imgs/Icon feather-menu.png" alt=""></button>
                 <div class="logo">
-                    <img src="./imgs/Image 1.png" alt="">
+                    <img src="./imgs/Image 1.png" class="large" alt="">
+                    <img src="./imgs/Image 1-sm.png" class="small" alt="">
                 </div>
                 <div class="other-logo">
-                    <img src="./imgs/Image 2.png" alt="">
+                    <img src="./imgs/Image 2.png" class="large" alt="">
+                    <img src="./imgs/Image 2-sm.png" width="100px" class="small" alt="">
                 </div>
             </div>
             <div class="d-flex align-items-center">
@@ -28,16 +33,17 @@
                 <div>
                     <button class="login">
                         Login
-                        <img src="./imgs/Icon open-account-login.png" alt="">
+                        <img src="./imgs/Icon open-account-login.png" class="large" alt="">
+                        <img src="./imgs/Icon open-account-login-sm.png" class="small" alt="">
                     </button>
                 </div>
             </div>
         </div>
         <div class="header row m-0">
             <div class="col-12">
-                <p class="title">
+                <div class="title">
                     Make your museum, conference,<br>exhibition or gallery virtual
-                </p>
+                </div>
                 <p class="description">
                     With our Experience Reality Platform you can quickly create, manage<br>and distribute virtual versions of your spaces and even charge for<br> remote entry!
                 </p>
@@ -122,17 +128,17 @@
             </div>
         </div>
         <div class="section-3">
-            <img src="./imgs/banner-office-1.png" alt="">
-            <div class="content">
-                <p class="title">
-                    We provide the full package
-                </p>
-                <p class="description">
-                    If you decide to work with us we will provide you with all the tools, training and support that you need
-                    <br> to get started and to manage the successful delivery of your experience learning package, including
-                    <br>cameras, upload facilities, asset management system, online tools and the backing of an award
-                    <br> winning team of developers, creatives, educators and artists.
-                </p>
+            <div class="section-3-container">
+                <div class="image"></div>
+                <div class="content">
+                    <p class="title">
+                        We provide the full package
+                    </p>
+                    <p class="description">
+                        If you decide to work with us we will provide you with all the tools, training and support that you need to get started and to manage the successful delivery of your experience learning package, including cameras, upload facilities, asset management system,
+                        online tools and the backing of an award winning team of developers, creatives, educators and artists.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="section-4">
@@ -167,19 +173,24 @@
                 <input type="text" id="name" placeholder="Your Name" autocomplete="off">
                 <input type="email" id="email" placeholder="Your Email" autocomplete="off">
                 <textarea id="message" placeholder="Your Message" autocomplete="off"></textarea>
-                <button id="send-message">Send Message</button>
+                <div class="send-message-container">
+                    <button id="send-message">Send Message</button>
+                </div>
             </div>
             <div class="col-12 col-md-6 p-0">
-                <img src="./imgs/why-haven’t-AR-and-VR-changed-our-lives-yet-1.png" alt="" class="w-100 h-100">
+                <img src="./imgs/why-haven’t-AR-and-VR-changed-our-lives-yet-1.png" alt="" class="w-100">
             </div>
         </div>
         <div class="footer">
-            <div class="footer-menu">
-                <div class="copy-right">
+            <div class="bar-container">
+                <div class="bar"></div>
+            </div>
+            <div class="footer-menu row">
+                <div class="copy-right col-12 col-md-6">
                     Built by
                     <span class="bold"> eLearning Studios </span> Copyright © 2020. All rights reserved.
                 </div>
-                <div class="terms">
+                <div class="terms col-12 col-md-6">
                     <ul>
                         <li>TERMS OF USE</li>
                         <li>PRIVACY POLICY</li>
