@@ -1,0 +1,77 @@
+@import "./variable.scss";
+@import "./common.scss";
+body * {
+    font-family: $mainFont;
+}
+
+body {
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form {
+            width: 359px;
+            height: 424px;
+            text-align: center;
+            .title {
+                font: {
+                    size: 32px;
+                    weight: 600;
+                }
+                margin-bottom: 10px;
+            }
+            .description {
+                color: #95ABC9;
+                font: {
+                    size: 15px;
+                    weight: 400;
+                }
+                margin-bottom: 39px;
+            }
+            .group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 21px;
+                label {
+                    font-size: 15px;
+                    color: #153845;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                label.username {
+                    text-align: left;
+                }
+                label.password {
+                    display: flex;
+                    justify-content: space-between;
+                    .lost-password {
+                        color: #95ABC9;
+                    }
+                }
+                input {
+                    width: 359px;
+                    height: 42px;
+                    padding-left: 5px;
+                    border-radius: 5px;
+                    background: #CCD4DE;
+                    border: 1px solid #DBDBDB;
+                }
+            }
+            .sign-button {
+                width: 359px;
+                height: 51px;
+                border-radius: 12px;
+                color: white;
+                background: $mainColor;
+                border: 1px solid $mainColor;
+                font: {
+                    size: 18px;
+                    weight: bold;
+                }
+            }
+        }
+    }
+    .image {
+        background: url('../imgs/shutterstock_1066240592.png');
+    }
+}

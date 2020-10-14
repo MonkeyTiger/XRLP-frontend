@@ -1,0 +1,18 @@
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: $mainColor;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $mainColor;
+}
+
+::-ms-input-placeholder {
+    color: $mainColor;
+}
