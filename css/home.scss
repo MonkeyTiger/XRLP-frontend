@@ -4,6 +4,7 @@ body {
     .to-top {
         position: fixed;
         bottom: 50px;
+        z-index: 1000;
         right: 45px;
     }
     .menu {
