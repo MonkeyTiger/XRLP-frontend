@@ -29,3 +29,28 @@ button {
     border-radius: 21px;
     font-weight: bold;
 }
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #CBA6D0;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #5B1A64;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5B1A64;
+}

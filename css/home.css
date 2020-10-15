@@ -45,6 +45,25 @@ button {
   font-weight: bold;
 }
 
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CBA6D0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5B1A64;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5B1A64;
+}
+
 body .to-top {
   position: fixed;
   bottom: 50px;
@@ -105,19 +124,34 @@ body .menu .menu-items ul {
 
 body .menu .menu-items ul li {
   font-size: 20px;
-  color: #707070;
   margin-left: 56px;
   list-style-type: none;
 }
 
-body .menu button.login {
+body .menu .menu-items ul li a {
+  color: #707070;
+  text-decoration: none;
+}
+
+body .menu a.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #852D91;
   border-radius: 21px;
   border: 1px solid #707070;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 147px;
   height: 57px;
   font-family: Montserrat;
   color: white;
+  text-align: center;
+  text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }

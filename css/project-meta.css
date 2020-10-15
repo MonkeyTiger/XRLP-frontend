@@ -44,6 +44,64 @@ button {
   font-weight: bold;
 }
 
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CBA6D0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5B1A64;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5B1A64;
+}
+
+body #edit-zoom-modal .icon {
+  padding: 57px 0 61px;
+}
+
+body .modal .modal-dialog {
+  width: 404px;
+}
+
+body .modal .modal-dialog .modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+body .modal .modal-dialog .modal-content .modal-header {
+  position: relative;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 59px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0;
+  background: #852D91;
+  text-align: center;
+}
+
+body .modal .modal-dialog .modal-content .modal-header .modal-title {
+  color: white;
+}
+
+body .modal .modal-dialog .modal-content .modal-header .close {
+  position: absolute;
+  color: white;
+  opacity: 1;
+  right: 15.6px;
+}
+
 body .broadcast {
   margin-top: 56px;
   display: -webkit-box;
@@ -200,12 +258,14 @@ body .main-content .detail .content .meta-control .control-item label span {
 body .main-content .detail .content .meta-control .control-item .edit {
   text-transform: uppercase;
   border-radius: 14px;
+  cursor: pointer;
   font-size: 14px;
   width: 66px;
   height: 30px;
 }
 
-body .main-content .search-bar {
+body .main-content .search-box .search-bar {
+  padding-right: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +274,7 @@ body .main-content .search-bar {
           align-items: center;
 }
 
-body .main-content .search-bar .icon {
+body .main-content .search-box .search-bar .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,23 +283,23 @@ body .main-content .search-bar .icon {
           align-items: center;
 }
 
-body .main-content .search-bar input::-webkit-input-placeholder {
+body .main-content .search-box .search-bar input::-webkit-input-placeholder {
   color: #707070;
 }
 
-body .main-content .search-bar input:-ms-input-placeholder {
+body .main-content .search-box .search-bar input:-ms-input-placeholder {
   color: #707070;
 }
 
-body .main-content .search-bar input::-ms-input-placeholder {
+body .main-content .search-box .search-bar input::-ms-input-placeholder {
   color: #707070;
 }
 
-body .main-content .search-bar input::placeholder {
+body .main-content .search-box .search-bar input::placeholder {
   color: #707070;
 }
 
-body .main-content .search-bar input {
+body .main-content .search-box .search-bar input {
   font-size: 25px;
   font-weight: 300;
   margin-left: 12.5px;
@@ -250,39 +310,85 @@ body .main-content .search-bar input {
   border-bottom: 1.5px solid #707070;
 }
 
-body .main-content .search-result .result-item {
+body .main-content .search-box .search-result {
+  padding-right: 35px;
+  height: 480px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body .main-content .search-box .search-result .result-item {
   border-bottom: 0.5px solid #707070;
-  padding: 18.5px 35px 18.5px 0;
+  padding: 18.5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .main-content .search-result .result-item .content .title {
+body .main-content .search-box .search-result .result-item .content {
+  margin-left: 7px;
+}
+
+body .main-content .search-box .search-result .result-item .content .title {
   font-size: 18px;
   font-weight: bold;
   line-height: 22px;
   margin-bottom: 0;
 }
 
-body .main-content .search-result .result-item .content .user {
+body .main-content .search-box .search-result .result-item .content .user {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 0;
 }
 
-body .main-content .search-result .result-item .content .date {
+body .main-content .search-box .search-result .result-item .content .date {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-body .main-content .search-result .result-item .content .description {
+body .main-content .search-box .search-result .result-item .content .description {
   font-size: 14px;
   line-height: 18px;
 }
 
+body .main-content .search-box .search-result .result-item .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 85px;
+}
+
+body .main-content .search-box .search-result .result-item .actions button {
+  text-transform: uppercase;
+  border-radius: 14px;
+  width: 85px;
+  height: 39px;
+  font-size: 18px;
+}
+
+body .main-content .search-box .upload-object {
+  width: 149px;
+  height: 39px;
+  border-radius: 6px;
+  border: 1px solid #707070;
+  background: #EBEBEB;
+  color: #707070;
+  float: right;
+  margin-top: 18.5px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
 body .main-content .wizard {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

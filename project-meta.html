@@ -128,7 +128,7 @@
                                                     <input type="checkbox">
                                                     <span>Zoom</span>
                                                 </label>
-                                                <button class="edit">edit</button>
+                                                <button class="edit" data-toggle="modal" data-target="#edit-zoom-modal">edit</button>
                                             </div>
 
                                             <div class="control-item">
@@ -136,7 +136,7 @@
                                                     <input type="checkbox">
                                                     <span>Audio</span>
                                                 </label>
-                                                <button class="edit">edit</button>
+                                                <button class="edit" data-toggle="modal" data-target="#edit-audio-modal">edit</button>
                                             </div>
 
                                             <div class="control-item">
@@ -144,7 +144,7 @@
                                                     <input type="checkbox">
                                                     <span>Video</span>
                                                 </label>
-                                                <button class="edit">edit</button>
+                                                <button class="edit" data-toggle="modal" data-target="#edit-video-modal">edit</button>
                                             </div>
 
                                             <div class="control-item" style="width: 230px">
@@ -152,7 +152,7 @@
                                                     <input type="checkbox">
                                                     <span>Add Character</span>
                                                 </label>
-                                                <button class="edit">edit</button>
+                                                <button class="edit" data-toggle="modal" data-target="#edit-character-modal">edit</button>
                                             </div>
 
                                             <div class="control-item" style="width: 180px">
@@ -160,7 +160,7 @@
                                                     <input type="checkbox">
                                                     <span>Hotspots</span>
                                                 </label>
-                                                <button class="edit">edit</button>
+                                                <button class="edit" data-toggle="modal" data-target="#edit-hotspots-modal">edit</button>
                                             </div>
                                         </div>
                                     </div>
@@ -170,27 +170,92 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="search-bar">
-                        <div class="icon">
-                            <img src="./imgs/Icon ionic-ios-search.png" alt="">
+                    <div class="search-box">
+                        <div class="search-bar">
+                            <div class="icon">
+                                <img src="./imgs/Icon ionic-ios-search.png" alt="">
+                            </div>
+                            <input type="text" placeholder="Search" />
                         </div>
-                        <input type="text" placeholder="Search" />
-                    </div>
-                    <div class="search-result">
-                        <div class="result-item">
-                            <img src="./imgs/HSW_HMAG_-1.png" alt="">
-                            <div class="content">
-                                <p class="title">Talsarn</p>
-                                <p class="user">Kyffin Williams</p>
-                                <p class="date">(1918–2006)</p>
-                                <p class="description">
-                                    Hereford Museum and Art Gallery.
-                                </p>
+                        <div class="search-result">
+                            <div class="result-item">
+                                <img src="./imgs/HSW_HMAG_-1.png" alt="">
+                                <div class="content">
+                                    <p class="title">Talsarn</p>
+                                    <p class="user">Kyffin Williams</p>
+                                    <p class="date">(1918–2006)</p>
+                                    <p class="description">
+                                        Hereford Museum and Art Gallery.
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                    <button class="add">add</button>
+                                    <button class="add">info</button>
+                                </div>
                             </div>
-                            <div class="actions">
-                                <button class="add">add</button>
-                                <button class="add">info</button>
+                            <div class="result-item">
+                                <img src="./imgs/NWM_OYM_-1.png" alt="">
+                                <div class="content">
+                                    <p class="title">Miss Josling</p>
+                                    <p class="user">Kyffin Williams</p>
+                                    <p class="date">(1918–2006)</p>
+                                    <p class="description">
+                                        Hereford Museum and Art Gallery.
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                    <button class="add">add</button>
+                                    <button class="add">info</button>
+                                </div>
                             </div>
+                            <div class="result-item">
+                                <img src="./imgs/NWM_ALU_PCF-1.png" alt="">
+                                <div class="content">
+                                    <p class="title">Snowdon</p>
+                                    <p class="user">Kyffin Williams</p>
+                                    <p class="date">(1918–2006)</p>
+                                    <p class="description">
+                                        Hereford Museum and Art Gallery.
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                    <button class="add">add</button>
+                                    <button class="add">info</button>
+                                </div>
+                            </div>
+                            <div class="result-item">
+                                <img src="./imgs/HSW_HMAG_-1.png" alt="">
+                                <div class="content">
+                                    <p class="title">Talsarn</p>
+                                    <p class="user">Kyffin Williams</p>
+                                    <p class="date">(1918–2006)</p>
+                                    <p class="description">
+                                        Hereford Museum and Art Gallery.
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                    <button class="add">add</button>
+                                    <button class="add">info</button>
+                                </div>
+                            </div>
+                            <div class="result-item">
+                                <img src="./imgs/HSW_HMAG_-1.png" alt="">
+                                <div class="content">
+                                    <p class="title">Talsarn</p>
+                                    <p class="user">Kyffin Williams</p>
+                                    <p class="date">(1918–2006)</p>
+                                    <p class="description">
+                                        Hereford Museum and Art Gallery.
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                    <button class="add">add</button>
+                                    <button class="add">info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="upload-object">UPLOAD OBJECT</button>
                         </div>
                     </div>
                 </div>
@@ -210,6 +275,21 @@
             </div>
         </div>
     </div>
+    <!-- The edit zoom modal -->
+    <div class="modal" id="edit-zoom-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Zoom</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
