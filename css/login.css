@@ -36,6 +36,14 @@ button:focus {
   color: #852D91;
 }
 
+button {
+  background: #852D91;
+  border: none;
+  color: white;
+  border-radius: 21px;
+  font-weight: bold;
+}
+
 body * {
   font-family: Montserrat;
 }
