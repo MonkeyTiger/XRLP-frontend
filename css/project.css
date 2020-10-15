@@ -67,7 +67,11 @@ body .main-content .gallery-card {
   border: 7px solid white;
 }
 
-body .main-content .gallery-card img {
+body .main-content .gallery-card .image {
+  position: relative;
+}
+
+body .main-content .gallery-card .image img {
   width: 100%;
 }
 
@@ -98,6 +102,24 @@ body .main-content .gallery-card.active {
 
 body .main-content .gallery-card.active .brief {
   background: #852D91;
+}
+
+body .main-content .gallery-card.add-gallery .plus {
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+  z-index: 1000;
+}
+
+body .main-content .gallery-card.add-gallery img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
 }
 
 body .main-content .summery {
