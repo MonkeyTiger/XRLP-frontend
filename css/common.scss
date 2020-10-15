@@ -1,4 +1,8 @@
 @import "./variable.scss";
+body * {
+    font-family: $mainFont!important;
+}
+
 input:focus,
 textarea:focus,
 button:focus {
