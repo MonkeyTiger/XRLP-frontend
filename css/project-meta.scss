@@ -1,0 +1,205 @@
+@import "./variable.scss";
+@import "./common.scss";
+body {
+    .broadcast {
+        margin-top: 56px;
+        display: flex;
+        align-items: center;
+        padding: 0 80px;
+        width: 100%;
+        height: 53px;
+        img {
+            margin: 0 8px;
+        }
+        span {
+            font-size: 14px;
+            color: #707070;
+        }
+    }
+    .main-content {
+        padding: 0 39.5px;
+        .screen {
+            padding: 40px 45px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 361px;
+            background: url('../imgs/Screenshot\ -1.png');
+            margin-bottom: 45px;
+        }
+        .summery {
+            font-size: 37px;
+            line-height: 45px;
+            margin-bottom: 18px;
+            >div {
+                margin-bottom: 10px;
+            }
+            .label {
+                font-weight: bold;
+            }
+            .value {
+                font-weight: 300;
+            }
+            .description {
+                margin-top: 14px;
+                margin-bottom: 38px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        .detail {
+            display: flex;
+            .content {
+                padding-left: 20px;
+                .title {
+                    font-size: 29px;
+                    line-height: 35px;
+                }
+                .description {
+                    .title {
+                        font: {
+                            size: 16px;
+                            weight: bold;
+                        }
+                        line-height: 19px;
+                    }
+                    .content {
+                        padding-left: 0;
+                        font: {
+                            size: 14px;
+                            weight: 300;
+                        }
+                        line-height: 18px;
+                    }
+                    .read-more {
+                        color: $mainColor;
+                        font: {
+                            size: 14px;
+                            weight: bold;
+                        }
+                        text-decoration: underline;
+                    }
+                }
+                .meta-control {
+                    padding: 17px 13px 0;
+                    .edit-metadata {
+                        text-transform: uppercase;
+                        width: 148px;
+                        height: 30px;
+                        font-size: 14px;
+                        border-radius: 17px;
+                        margin-bottom: 17px;
+                    }
+                    .control-item {
+                        margin-bottom: 15px;
+                        padding: 0 2px;
+                        width: 150px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        label {
+                            input[type=checkbox] {
+                                width: 23px;
+                                height: 23px;
+                                border: 1px solid black;
+                                border-radius: 4px;
+                                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                            }
+                            display: flex;
+                            margin-bottom: 0;
+                            align-items: center;
+                            span {
+                                margin-left: 8px;
+                                font: {
+                                    size: 14px;
+                                    weight: bold;
+                                }
+                            }
+                        }
+                        .edit {
+                            text-transform: uppercase;
+                            border-radius: 14px;
+                            font-size: 14px;
+                            width: 66px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            .icon {
+                display: flex;
+                align-items: center;
+            }
+            input::placeholder {
+                color: #707070;
+            }
+            input {
+                font: {
+                    size: 25px;
+                    weight: 300;
+                }
+                margin-left: 12.5px;
+                width: 387.4px;
+                color: #707070;
+                height: 34.5px;
+                border: none;
+                border-bottom: 1.5px solid #707070;
+            }
+        }
+        .search-result {
+            .result-item {
+                border-bottom: 0.5px solid #707070;
+                padding: 18.5px 35px 18.5px 0;
+                display: flex;
+                .content {
+                    .title {
+                        font: {
+                            size: 18px;
+                            weight: bold;
+                        }
+                        line-height: 22px;
+                        margin-bottom: 0;
+                    }
+                    .user {
+                        font-size: 14px;
+                        line-height: 18px;
+                        margin-bottom: 0;
+                    }
+                    .date {
+                        font: {
+                            size: 14px;
+                            weight: bold;
+                        }
+                        margin-bottom: 10px;
+                    }
+                    .description {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .wizard {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 25px;
+            button {
+                border: none;
+                width: 196px;
+                height: 61px;
+                color: white;
+                font-weight: 400;
+                background: $mainColor;
+                font-size: 20px;
+                border-radius: 21px;
+            }
+            .next {
+                margin-left: 32px;
+            }
+        }
+    }
+}

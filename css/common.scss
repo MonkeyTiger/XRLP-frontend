@@ -1,6 +1,6 @@
 @import "./variable.scss";
 body * {
-    font-family: $mainFont!important;
+    font-family: $mainFont !important;
 }
 
 input:focus,
@@ -20,4 +20,12 @@ button:focus {
 
 ::-ms-input-placeholder {
     color: $mainColor;
+}
+
+button {
+    background: $mainColor;
+    border: none;
+    color: white;
+    border-radius: 21px;
+    font-weight: bold;
 }

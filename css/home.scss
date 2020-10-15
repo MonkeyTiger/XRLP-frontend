@@ -32,7 +32,7 @@ body {
             margin-right: 105px;
             ul {
                 display: flex;
-                margin-bottom: 0px;
+                margin-bottom: 0;
                 li {
                     font-size: 20px;
                     color: #707070;
@@ -54,7 +54,7 @@ body {
         }
     }
     .header {
-        margin-top: 105px!important;
+        margin-top: 105px !important;
         display: flex;
         align-items: center;
         .col-12 {
@@ -102,17 +102,17 @@ body {
         }
     }
     .section-1 {
-        padding: 79px 0 53px 0;
+        padding: 79px 0 53px;
         >.title {
             text-align: center;
-            margin: 0 0 53px 0;
+            margin: 0 0 53px;
             font-family: $mainFont;
             font-size: 50px;
             font-weight: bold;
             line-height: 61px;
         }
         .builder-links {
-            padding: 0 59.5px 24px 59.5px;
+            padding: 0 59.5px 24px;
             .builder-card {
                 img {
                     width: 100%;
@@ -120,7 +120,7 @@ body {
                 text-align: center;
                 padding: 0 52.5px;
                 .title {
-                    margin: 39px 0 3px 0;
+                    margin: 39px 0 3px;
                     font-size: 30px;
                     font-weight: bold;
                     text-align: center;
@@ -154,7 +154,7 @@ body {
             text-align: center;
             color: white;
             .title {
-                margin: 30px 0 11px 0;
+                margin: 30px 0 11px;
                 font-weight: bold;
                 font-size: 30px;
             }
@@ -166,7 +166,7 @@ body {
         }
     }
     .section-3 {
-        padding: 135px 181px 172px 181px;
+        padding: 135px 181px 172px;
         background: #EAE7E5;
         .section-3-container {
             height: 724px;
@@ -214,7 +214,7 @@ body {
             }
         }
         .content {
-            padding: 37px 172px 0 172px;
+            padding: 37px 172px 0;
             .title {
                 font-size: 50px;
                 font-weight: bold;
@@ -240,7 +240,6 @@ body {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -180px);
-                    ;
                     .play {
                         background: none;
                         border: none;
@@ -263,7 +262,7 @@ body {
     .section-5 {
         background: #EAE7E5;
         .form {
-            padding: 126px 100px 90px 100px;
+            padding: 126px 100px 90px;
             .title {
                 font: {
                     size: 50px;
@@ -360,7 +359,7 @@ body {
     }
 }
 
-@media (max-width: 620px) {
+@media(max-width: 620px) {
     body {
         .header {
             background: {
@@ -392,9 +391,9 @@ body {
     }
 }
 
-@media (max-width: 1440px) {
+@media(max-width: 1082px) {
     .menu-button {
-        display: inline!important;
+        display: inline !important;
     }
     body {
         .menu {
@@ -412,7 +411,7 @@ body {
             .logo {
                 margin: {
                     left: 18px;
-                    right: 0px;
+                    right: 0;
                 }
             }
             .menu-items {
@@ -420,7 +419,7 @@ body {
                 margin-right: 105px;
                 ul {
                     display: flex;
-                    margin-bottom: 0px;
+                    margin-bottom: 0;
                     li {
                         font-size: 20px;
                         color: #707070;
@@ -431,7 +430,7 @@ body {
             }
         }
         .header {
-            margin-top: 90px!important;
+            margin-top: 90px !important;
             display: flex;
             align-items: center;
             .col-12 {
@@ -474,10 +473,10 @@ body {
             }
         }
         .section-1 {
-            padding: 26px 0 25px 0;
+            padding: 26px 0 25px;
             >.title {
                 text-align: center;
-                margin: 0 0 28px 0;
+                margin: 0 0 28px;
                 font-family: $mainFont;
                 font-size: 25px;
                 font-weight: bold;
@@ -493,7 +492,7 @@ body {
                     text-align: center;
                     padding: 0 52.5px;
                     .title {
-                        margin: 9px 0 5px 0;
+                        margin: 9px 0 5px;
                         font-size: 22px;
                         font-weight: bold;
                         line-height: 27px;
@@ -522,14 +521,14 @@ body {
         }
         .section-2 {
             background: $mainColor;
-            padding: 69px 23px 42px 23px;
+            padding: 69px 23px 42px;
             .ads-card {
-                padding: 0px;
+                padding: 0;
                 text-align: center;
                 color: white;
                 margin-bottom: 27px;
                 .title {
-                    margin: 35px 0 13px 0;
+                    margin: 35px 0 13px;
                     font-weight: bold;
                     font-size: 25px;
                 }
@@ -557,7 +556,7 @@ body {
                     background-size: cover;
                 }
                 .content {
-                    padding: 27px 15px 18px 15px;
+                    padding: 27px 15px 18px;
                     bottom: 0;
                     left: 0;
                     position: relative;
@@ -579,11 +578,11 @@ body {
         }
         .section-4 {
             position: relative;
-            padding-bottom: 0px;
+            padding-bottom: 0;
             .vr-image {
                 width: 100%;
                 text-align: center;
-                top: 0px;
+                top: 0;
                 padding: 0 26px;
                 img {
                     width: 100%;
@@ -591,19 +590,19 @@ body {
                 }
             }
             .content {
-                padding: 0px;
+                padding: 0;
                 .title {
                     padding: 0 15px;
                     text-align: center;
                     font-size: 25px;
                     font-weight: bold;
-                    margin-bottom: 0px;
+                    margin-bottom: 0;
                     line-height: 61px
                 }
                 .description {
                     font-size: 16px;
                     padding: 0 15px;
-                    margin-bottom: 0px;
+                    margin-bottom: 0;
                     line-height: 22px;
                     text-align: center;
                 }
@@ -621,7 +620,6 @@ body {
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -180px);
-                        ;
                         .play {
                             background: none;
                             border: none;
@@ -644,7 +642,7 @@ body {
         .section-5 {
             background: #EAE7E5;
             .form {
-                padding: 17px 17px 20px 17px;
+                padding: 17px 17px 20px;
                 .title {
                     font: {
                         size: 30px;
@@ -711,7 +709,7 @@ body {
                 }
             }
             width: 100%;
-            padding: 54px 34px 77px 34px;
+            padding: 54px 34px 77px;
             background: #222222;
             color: white;
             .footer-menu {
