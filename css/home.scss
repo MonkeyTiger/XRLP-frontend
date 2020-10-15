@@ -390,7 +390,7 @@ body {
             .small {
                 display: inline;
             }
-            button.login {
+            a.login {
                 background: $mainColor;
                 border-radius: 21px;
                 border: 1px solid #707070;
@@ -462,7 +462,7 @@ body {
     }
 }
 
-@media(max-width: 1082px) {
+@media(max-width: 1205px) {
     .menu-button {
         display: inline !important;
     }
@@ -545,7 +545,7 @@ body {
         }
         .section-1 {
             padding: 26px 0 25px;
-            >>.title {
+            >.title {
                 text-align: center;
                 margin: 0 0 28px;
                 font-family: $mainFont;

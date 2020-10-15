@@ -523,7 +523,7 @@ body .footer .external-links a {
   body .menu .small {
     display: inline;
   }
-  body .menu button.login {
+  body .menu a.login {
     background: #852D91;
     border-radius: 21px;
     border: 1px solid #707070;
@@ -608,7 +608,7 @@ body .footer .external-links a {
   }
 }
 
-@media (max-width: 1082px) {
+@media (max-width: 1205px) {
   .menu-button {
     display: inline !important;
   }
@@ -696,7 +696,7 @@ body .footer .external-links a {
   body .section-1 {
     padding: 26px 0 25px;
   }
-  body .section-1 > > .title {
+  body .section-1 > .title {
     text-align: center;
     margin: 0 0 28px;
     font-family: Montserrat;
