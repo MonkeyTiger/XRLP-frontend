@@ -74,7 +74,7 @@
             <div class="broadcast">
                 <span>Home</span>
                 <img src="./imgs/dot.png" alt="">
-                <span>Project</span>
+                <span>Projects</span>
                 <img src="./imgs/dot.png" alt="">
                 <span>Small Gallery</span>
             </div>
@@ -261,15 +261,12 @@
                 </div>
                 <div class="col-12">
                     <div class="wizard">
-                        <button class="back">
-                            <img src="./imgs/Icon awesome-chevron-left.png" alt="">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            Back
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </button>
-                        <button class="next">
+                        <a class="back" href="./config-project.html">
+                            <img src="./imgs/Icon awesome-chevron-left.png" alt=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Back &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </a>
+                        <a class="next">
                             Save & Publish
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -284,7 +281,104 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <img src="./imgs/Image 12.png" alt="">
+                    </div>
+                    <div class="dropzone">
+                        <img src="./imgs/Image 11.png" alt="" class="add">
+                        <div class="area">
+                            Drag files here or &nbsp;<span class="bold">browse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The edit audio modal -->
+    <div class="modal" id="edit-audio-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Audio</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="icon">
+                        <img src="./imgs/Image 13.png" alt="">
+                    </div>
+                    <div class="dropzone">
+                        <img src="./imgs/Image 11.png" alt="" class="add">
+                        <div class="area">
+                            Drag files here or &nbsp;<span class="bold">browse</span>
+                        </div>
+                    </div>
+                    <div class="auto-start">
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Auto Start</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The edit audio modal -->
+    <div class="modal" id="edit-video-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Video</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="icon">
+                        <img src="./imgs/Image 14.png" alt="">
+                    </div>
+                    <div class="dropzone">
+                        <img src="./imgs/Image 11.png" alt="" class="add">
+                        <div class="area">
+                            Drag files here or &nbsp;<span class="bold">browse</span>
+                        </div>
+                    </div>
+                    <div class="auto-start">
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Auto Start</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The edit character modal -->
+    <div class="modal" id="edit-character-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Character</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="slider-container">
+                        <div class="slider">
+                            <img src="./imgs/Icon ionic-ios-arrow-dropleft-circle.png" class="left">
+                            <div class="slider-image">
+                                <img src="./imgs/image-original.png" alt="">
+                            </div>
+                            <img src="./imgs/Icon ionic-ios-arrow-dropright-circle.png" class="right">
+                        </div>
+                        <div class="image-name">
+                            <span class="label mr-1">Character Name: </span>
+                            <span class="name">Andrei tarkovsky</span>
+                        </div>
+                    </div>
+                    <div class="button-groups">
+                        <a href="#">Add Voice Track</a>
+                        <a href="./project-add-dialog.html">Add Dialog</a>
+                        <a href="./project-add-character.html">Create New Character</a>
+                    </div>
                 </div>
             </div>
         </div>

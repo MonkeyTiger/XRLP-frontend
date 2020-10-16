@@ -177,8 +177,11 @@ body {
             display: flex;
             justify-content: flex-end;
             margin-bottom: 25px;
-            button {
+            a {
                 border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 196px;
                 height: 61px;
                 color: white;

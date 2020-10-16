@@ -1,0 +1,286 @@
+body * {
+  font-family: Montserrat !important;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #852D91;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #852D91;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #852D91;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #852D91;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #852D91;
+}
+
+::-ms-input-placeholder {
+  color: #852D91;
+}
+
+button {
+  background: #852D91;
+  border: none;
+  color: white;
+  border-radius: 21px;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CBA6D0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5B1A64;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5B1A64;
+}
+
+body .broadcast {
+  margin-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 80px;
+  width: 100%;
+  height: 53px;
+}
+
+body .broadcast img {
+  margin: 0 8px;
+}
+
+body .broadcast span {
+  font-size: 14px;
+  color: #707070;
+}
+
+body .main-content {
+  padding: 0 45.5px 0 80.5px;
+}
+
+body .main-content .header .small {
+  font-size: 14px;
+  list-style: 18px;
+  color: #6F6F6F;
+  margin-bottom: 4px;
+}
+
+body .main-content .header .main-title {
+  font-size: 23px;
+  line-height: 28px;
+  color: black;
+  margin-bottom: 13.5px;
+}
+
+body .main-content .header button {
+  font-size: 15px;
+  border-radius: 21px;
+  width: 87px;
+  height: 40px;
+}
+
+body .main-content .table-container table {
+  margin-bottom: 25px;
+}
+
+body .main-content .table-container table col:first-child {
+  background: #FF0;
+}
+
+body .main-content .table-container table td,
+body .main-content .table-container table th {
+  border: none;
+  vertical-align: middle;
+}
+
+body .main-content .table-container table button {
+  font-weight: normal;
+  font-size: 12px;
+  border-radius: 5px;
+  height: 32px;
+  padding: 0 16px;
+}
+
+body .main-content .table-container table thead {
+  border-top: 1px solid #E2E2E2;
+}
+
+body .main-content .table-container table thead tr {
+  height: 54.5px;
+}
+
+body .main-content .table-container table thead tr th div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main-content .table-container table thead tr th div .sort {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body .main-content .table-container table thead tr th div .sort .up {
+  margin-bottom: 3px;
+}
+
+body .main-content .table-container table tbody tr:nth-child(even) {
+  background: white;
+  font-weight: bold;
+}
+
+body .main-content .table-container table tbody tr:nth-child(odd) {
+  background: #F1F1F1;
+}
+
+body .main-content .table-container table tbody tr:nth-child(odd) td:first-child {
+  background: #852D91;
+  color: white;
+  padding-left: 12px !important;
+}
+
+body .main-content .table-container table tbody tr:nth-child(odd) td:last-child {
+  padding-right: 1.5px;
+}
+
+body .main-content .table-container table tbody tr td:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main-content .table-container table tbody tr td {
+  height: 50px;
+  padding: 0;
+}
+
+body .main-content .pagination-container .pagination {
+  margin-bottom: 23px;
+  padding: 7px 9px 6px;
+  background: #F1F1F1;
+}
+
+body .main-content .pagination-container .pagination .page-item.active a {
+  background: #852D91;
+  color: white;
+}
+
+body .main-content .pagination-container .pagination .page-item {
+  border-radius: 0;
+  width: 25px;
+  height: 25px;
+}
+
+body .main-content .pagination-container .pagination .page-item a:hover {
+  background: #852D91;
+  color: white;
+}
+
+body .main-content .pagination-container .pagination .page-item a {
+  background: none;
+  font-size: 14px;
+  border: none;
+  color: #6F6F6F;
+  border-radius: 0;
+  line-height: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body .main-content .wizard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+body .main-content .wizard a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  width: 196px;
+  height: 61px;
+  color: white;
+  font-weight: 400;
+  background: #852D91;
+  font-size: 20px;
+  border-radius: 21px;
+}
+
+body .main-content .wizard .next {
+  margin-left: 32px;
+}
+/*# sourceMappingURL=project-add-dialog.css.map */

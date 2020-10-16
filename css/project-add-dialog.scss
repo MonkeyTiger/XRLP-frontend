@@ -1,0 +1,168 @@
+@import "./variable.scss";
+@import "./common.scss";
+body {
+    .broadcast {
+        margin-top: 56px;
+        display: flex;
+        align-items: center;
+        padding: 0 80px;
+        width: 100%;
+        height: 53px;
+        img {
+            margin: 0 8px;
+        }
+        span {
+            font-size: 14px;
+            color: #707070;
+        }
+    }
+    .main-content {
+        padding: 0 45.5px 0 80.5px;
+        .header {
+            .small {
+                font-size: 14px;
+                list-style: 18px;
+                color: #6F6F6F;
+                margin-bottom: 4px;
+            }
+            .main-title {
+                font-size: 23px;
+                line-height: 28px;
+                color: black;
+                margin-bottom: 13.5px;
+            }
+            button {
+                font-size: 15px;
+                border-radius: 21px;
+                width: 87px;
+                height: 40px;
+            }
+        }
+        .table-container {
+            table {
+                margin-bottom: 25px;
+                col:first-child {
+                    background: #FF0
+                }
+                td,
+                th {
+                    border: none;
+                    vertical-align: middle;
+                }
+                button {
+                    font-weight: normal;
+                    font-size: 12px;
+                    border-radius: 5px;
+                    height: 32px;
+                    padding: 0 16px;
+                }
+                thead {
+                    tr {
+                        height: 54.5px;
+                    }
+                    border-top: 1px solid #E2E2E2;
+                    tr th div {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .sort {
+                            width: 50px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            .up {
+                                margin-bottom: 3px;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr:nth-child(even) {
+                        background: white;
+                        font-weight: bold;
+                    }
+                    tr:nth-child(odd) {
+                        background: #F1F1F1;
+                        td:first-child {
+                            background: $mainColor;
+                            color: white;
+                            padding-left: 12px !important;
+                        }
+                        td:last-child {
+                            padding-right: 1.5px;
+                        }
+                    }
+                    tr {
+                        td:nth-child(3) {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        td {
+                            height: 50px;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .pagination-container {
+            .pagination {
+                margin-bottom: 23px;
+                padding: 7px 9px 6px;
+                background: #F1F1F1;
+                .page-item.active {
+                    a {
+                        background: $mainColor;
+                        color: white;
+                    }
+                }
+                .page-item {
+                    border-radius: 0;
+                    width: 25px;
+                    height: 25px;
+                    a:hover {
+                        background: $mainColor;
+                        color: white;
+                    }
+                    a {
+                        background: none;
+                        font-size: 14px;
+                        border: none;
+                        color: #6F6F6F;
+                        border-radius: 0;
+                        line-height: 1px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .wizard {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 25px;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                width: 196px;
+                height: 61px;
+                color: white;
+                font-weight: 400;
+                background: $mainColor;
+                font-size: 20px;
+                border-radius: 21px;
+            }
+            .next {
+                margin-left: 32px;
+            }
+        }
+    }
+}

@@ -44,6 +44,25 @@ button {
   font-weight: bold;
 }
 
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CBA6D0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5B1A64;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5B1A64;
+}
+
 body .broadcast {
   margin-top: 56px;
   display: -webkit-box;
@@ -280,8 +299,17 @@ body .main-content .wizard {
   margin-bottom: 25px;
 }
 
-body .main-content .wizard button {
+body .main-content .wizard a {
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 196px;
   height: 61px;
   color: white;

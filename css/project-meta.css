@@ -65,6 +65,264 @@ button {
 
 body #edit-zoom-modal .icon {
   padding: 57px 0 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FAFAFA;
+}
+
+body #edit-zoom-modal .dropzone {
+  position: relative;
+  background: #F1F5FF;
+  padding: 24px 22px 18px;
+}
+
+body #edit-zoom-modal .dropzone .add {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  -webkit-transform: translate(0, -46px);
+          transform: translate(0, -46px);
+}
+
+body #edit-zoom-modal .dropzone .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 4px dashed #D3DFFD;
+  height: 96px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #91A4BF;
+}
+
+body #edit-zoom-modal .dropzone .area .bold {
+  color: #852D91;
+}
+
+body #edit-audio-modal .icon {
+  padding: 57px 0 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FAFAFA;
+}
+
+body #edit-audio-modal .dropzone {
+  position: relative;
+  background: #F1F5FF;
+  padding: 24px 22px 18px;
+}
+
+body #edit-audio-modal .dropzone .add {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  -webkit-transform: translate(0, -46px);
+          transform: translate(0, -46px);
+}
+
+body #edit-audio-modal .dropzone .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 4px dashed #D3DFFD;
+  height: 96px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #91A4BF;
+}
+
+body #edit-audio-modal .dropzone .area .bold {
+  color: #852D91;
+}
+
+body #edit-audio-modal .auto-start {
+  background: #E1E9FD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #edit-audio-modal .auto-start label {
+  margin-bottom: 0;
+}
+
+body #edit-audio-modal .auto-start label input {
+  width: 18.3px;
+  height: 18.3px;
+  border: 1px solid black;
+  margin-bottom: 0;
+}
+
+body #edit-audio-modal .auto-start label span {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body #edit-video-modal .icon {
+  padding: 57px 0 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FAFAFA;
+}
+
+body #edit-video-modal .dropzone {
+  position: relative;
+  background: #F1F5FF;
+  padding: 24px 22px 18px;
+}
+
+body #edit-video-modal .dropzone .add {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  -webkit-transform: translate(0, -46px);
+          transform: translate(0, -46px);
+}
+
+body #edit-video-modal .dropzone .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 4px dashed #D3DFFD;
+  height: 96px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #91A4BF;
+}
+
+body #edit-video-modal .dropzone .area .bold {
+  color: #852D91;
+}
+
+body #edit-video-modal .auto-start {
+  background: #E1E9FD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #edit-video-modal .auto-start label {
+  margin-bottom: 0;
+}
+
+body #edit-video-modal .auto-start label input {
+  width: 18.3px;
+  height: 18.3px;
+  border: 1px solid black;
+  margin-bottom: 0;
+}
+
+body #edit-video-modal .auto-start label span {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body #edit-character-modal .slider-container {
+  background: #FAFAFA;
+  padding: 18px 0 12px;
+}
+
+body #edit-character-modal .slider-container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+
+body #edit-character-modal .slider-container .slider .slider-image {
+  margin: 0 18px;
+}
+
+body #edit-character-modal .slider-container .image-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+}
+
+body #edit-character-modal .slider-container .image-name .label {
+  font-weight: bold;
+}
+
+body #edit-character-modal .button-groups {
+  background: #F1F5FF;
+  padding: 37px 36px 18px;
+}
+
+body #edit-character-modal .button-groups a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 42px;
+  margin-bottom: 18px;
+  background: #852D91;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
 }
 
 body .modal .modal-dialog {
@@ -100,6 +358,10 @@ body .modal .modal-dialog .modal-content .modal-header .close {
   color: white;
   opacity: 1;
   right: 15.6px;
+}
+
+body .modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
 }
 
 body .broadcast {
@@ -398,8 +660,17 @@ body .main-content .wizard {
   margin-bottom: 25px;
 }
 
-body .main-content .wizard button {
+body .main-content .wizard a {
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 196px;
   height: 61px;
   color: white;
@@ -411,5 +682,10 @@ body .main-content .wizard button {
 
 body .main-content .wizard .next {
   margin-left: 32px;
+}
+
+body .main-content .wizard .next:hover {
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=project-meta.css.map */

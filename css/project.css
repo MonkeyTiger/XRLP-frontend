@@ -44,6 +44,25 @@ button {
   font-weight: bold;
 }
 
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CBA6D0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5B1A64;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5B1A64;
+}
+
 body .broadcast {
   margin-top: 56px;
   display: -webkit-box;
@@ -148,5 +167,40 @@ body .main-content .summery .description {
   margin-bottom: 38px;
   font-size: 18px;
   line-height: 22px;
+}
+
+body .main-content .wizard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+body .main-content .wizard a {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 196px;
+  height: 61px;
+  color: white;
+  font-weight: 400;
+  background: #852D91;
+  font-size: 20px;
+  border-radius: 21px;
+}
+
+body .main-content .wizard a:hover {
+  color: white;
+}
+
+body .main-content .wizard .next {
+  margin-left: 32px;
 }
 /*# sourceMappingURL=project.css.map */
