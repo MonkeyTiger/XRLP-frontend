@@ -87,13 +87,15 @@ body {
                         td:first-child {
                             background: $mainColor;
                             color: white;
-                            padding-left: 12px !important;
                         }
                         td:last-child {
                             padding-right: 1.5px;
                         }
                     }
                     tr {
+                        td:first-child {
+                            padding-left: 12px !important;
+                        }
                         td:nth-child(3) {
                             display: flex;
                             justify-content: space-between;

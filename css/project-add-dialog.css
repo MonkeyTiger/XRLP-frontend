@@ -183,11 +183,14 @@ body .main-content .table-container table tbody tr:nth-child(odd) {
 body .main-content .table-container table tbody tr:nth-child(odd) td:first-child {
   background: #852D91;
   color: white;
-  padding-left: 12px !important;
 }
 
 body .main-content .table-container table tbody tr:nth-child(odd) td:last-child {
   padding-right: 1.5px;
+}
+
+body .main-content .table-container table tbody tr td:first-child {
+  padding-left: 12px !important;
 }
 
 body .main-content .table-container table tbody tr td:nth-child(3) {
