@@ -17,7 +17,7 @@ body {
         }
     }
     .main-content {
-        padding: 0 45.5px 0 80.5px;
+        padding: 0 45.5px 150px 80.5px;
         .header {
             .small {
                 font-size: 14px;
@@ -145,26 +145,23 @@ body {
                 }
             }
         }
-        .wizard {
+    }
+    .wizard {
+        a {
             display: flex;
-            justify-content: flex-end;
-            margin-bottom: 25px;
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: none;
-                width: 196px;
-                height: 61px;
-                color: white;
-                font-weight: 400;
-                background: $mainColor;
-                font-size: 20px;
-                border-radius: 21px;
-            }
-            .next {
-                margin-left: 32px;
-            }
+            align-items: center;
+            justify-content: center;
+            border: none;
+            width: 196px;
+            height: 61px;
+            color: white;
+            font-weight: 400;
+            background: $mainColor;
+            font-size: 20px;
+            border-radius: 21px;
+        }
+        .next {
+            margin-left: 32px;
         }
     }
 }

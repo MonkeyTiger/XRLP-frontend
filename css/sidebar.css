@@ -28,6 +28,16 @@ a:focus {
     transition: all 0.3s;
 }
 
+.wizard {
+    background: white;
+    padding: 44px 39px 36px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 270px);
+}
+
 #sidebar .sidebar-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding: 0 21px;
@@ -138,7 +148,7 @@ ul ul a {
 }
 
 #content {
-    width: 100%;
+    width: calc(100% - 270px);
     margin-left: 270px;
 }
 
@@ -187,6 +197,12 @@ ul ul a {
 }
 
 .wrapper.active #content .navbar {
+    width: calc(100% - 80px);
+}
+
+.wrapper.active .wizard {
+    position: fixed;
+    bottom: 0;
     width: calc(100% - 80px);
 }
 

@@ -63,6 +63,17 @@ button {
   background: #5B1A64;
 }
 
+.slick-slider {
+  margin-left: 30px;
+  padding-left: 15px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-size: 35px;
+}
+
 body .mb-36 {
   margin-bottom: 36px !important;
 }
@@ -90,7 +101,7 @@ body .broadcast span {
 }
 
 body .main-content {
-  padding: 0 0 0 34.5px;
+  padding: 0 0 150px 34.5px;
 }
 
 body .main-content .title {
@@ -102,6 +113,7 @@ body .main-content .title .label {
 }
 
 body .main-content .content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +144,8 @@ body .main-content .content .upload div .upload-file {
 }
 
 body .main-content .content .model {
-  padding: 0 35px;
+  width: calc(100% - 350px);
+  padding: 0 0 0 35px;
 }
 
 body .main-content .content .model .nav-tabs {
@@ -177,56 +190,7 @@ body .main-content .content .model .tab-content .tab-pane {
   padding: 0;
 }
 
-body .main-content .content .model .tab-content #hair .model-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body .main-content .content .model .tab-content #hair .model-type .content {
-  padding: 28px 0;
-  width: 1060px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-body .main-content .content .model .tab-content #hair .model-type .content img {
-  margin: 0 15px;
-}
-
-body .main-content .content .model .tab-content #hair .colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body .main-content .content .model .tab-content #hair .colors .left {
-  opacity: 0;
-}
-
-body .main-content .content .model .tab-content #hair .colors .content {
-  padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 1060px;
-}
-
+body .main-content .content .model .tab-content #hair .model-type,
 body .main-content .content .model .tab-content #facial-hair .model-type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,17 +203,21 @@ body .main-content .content .model .tab-content #facial-hair .model-type {
           justify-content: space-between;
 }
 
+body .main-content .content .model .tab-content #hair .model-type .content,
 body .main-content .content .model .tab-content #facial-hair .model-type .content {
+  width: calc(100% - 100px);
   padding: 28px 0;
-  width: 1060px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
+body .main-content .content .model .tab-content #hair .model-type .content img,
 body .main-content .content .model .tab-content #facial-hair .model-type .content img {
-  margin: 0 15px;
+  margin: 0 10px;
+  height: 207px;
 }
 
+body .main-content .content .model .tab-content #hair .colors,
 body .main-content .content .model .tab-content #facial-hair .colors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,29 +230,31 @@ body .main-content .content .model .tab-content #facial-hair .colors {
           justify-content: space-between;
 }
 
+body .main-content .content .model .tab-content #hair .colors .left,
+body .main-content .content .model .tab-content #facial-hair .colors .left {
+  opacity: 0;
+}
+
+body .main-content .content .model .tab-content #hair .colors .content,
 body .main-content .content .model .tab-content #facial-hair .colors .content {
   padding: 0 15px;
+  width: calc(100% - 100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1060px;
 }
 
-body .main-content .wizard {
-  padding: 0 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 25px;
+body .main-content .content .model .tab-content #hair .colors .content img,
+body .main-content .content .model .tab-content #facial-hair .colors .content img {
+  margin: 0 10px;
+  width: 69px !important;
+  height: 72px;
 }
 
-body .main-content .wizard a {
+body .wizard a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,7 +274,7 @@ body .main-content .wizard a {
   border-radius: 21px;
 }
 
-body .main-content .wizard .next {
+body .wizard .next {
   margin-left: 32px;
 }
 /*# sourceMappingURL=project-add-character.css.map */

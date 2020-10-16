@@ -86,7 +86,7 @@ body .broadcast span {
 }
 
 body .main-content {
-  padding: 0 45.5px 0 80.5px;
+  padding: 0 45.5px 150px 80.5px;
 }
 
 body .main-content .header .small {
@@ -253,17 +253,7 @@ body .main-content .pagination-container .pagination .page-item a {
   height: 100%;
 }
 
-body .main-content .wizard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 25px;
-}
-
-body .main-content .wizard a {
+body .wizard a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +273,7 @@ body .main-content .wizard a {
   border-radius: 21px;
 }
 
-body .main-content .wizard .next {
+body .wizard .next {
   margin-left: 32px;
 }
 /*# sourceMappingURL=project-add-dialog.css.map */

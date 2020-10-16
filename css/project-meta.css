@@ -387,7 +387,7 @@ body .broadcast span {
 }
 
 body .main-content {
-  padding: 0 39.5px;
+  padding: 0 39.5px 150px;
 }
 
 body .main-content .screen {
@@ -649,18 +649,7 @@ body .main-content .search-box .upload-object {
   font-weight: 500;
 }
 
-body .main-content .wizard {
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 25px;
-}
-
-body .main-content .wizard a {
+body .wizard a {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,11 +669,11 @@ body .main-content .wizard a {
   border-radius: 21px;
 }
 
-body .main-content .wizard .next {
+body .wizard .next {
   margin-left: 32px;
 }
 
-body .main-content .wizard .next:hover {
+body .wizard .next:hover {
   color: white;
   cursor: pointer;
 }

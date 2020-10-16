@@ -86,7 +86,7 @@ body .broadcast span {
 }
 
 body .main-content {
-  padding: 0 39.5px;
+  padding: 0 39.5px 150px;
 }
 
 body .main-content .screen {
@@ -289,17 +289,7 @@ body .main-content .material-cards .material-card.active .title {
   background: #852D91;
 }
 
-body .main-content .wizard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 25px;
-}
-
-body .main-content .wizard a {
+body .wizard a {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,7 +308,7 @@ body .main-content .wizard a {
   border-radius: 21px;
 }
 
-body .main-content .wizard .next {
+body .wizard .next {
   margin-left: 32px;
 }
 /*# sourceMappingURL=config-project.css.map */

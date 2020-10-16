@@ -22,7 +22,7 @@ body {
             height: 361px;
             background: url('../imgs/Screenshot\ -1.png');
         }
-        padding: 0 39.5px;
+        padding: 0 39.5px 150px;
         .gallery-card {
             margin: 0 20px 40px;
             border: 7px solid white;
@@ -173,25 +173,22 @@ body {
                 }
             }
         }
-        .wizard {
+    }
+    .wizard {
+        a {
+            border: none;
             display: flex;
-            justify-content: flex-end;
-            margin-bottom: 25px;
-            a {
-                border: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 196px;
-                height: 61px;
-                color: white;
-                background: $mainColor;
-                font-size: 20px;
-                border-radius: 21px;
-            }
-            .next {
-                margin-left: 32px;
-            }
+            align-items: center;
+            justify-content: center;
+            width: 196px;
+            height: 61px;
+            color: white;
+            background: $mainColor;
+            font-size: 20px;
+            border-radius: 21px;
+        }
+        .next {
+            margin-left: 32px;
         }
     }
 }

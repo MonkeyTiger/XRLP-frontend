@@ -239,7 +239,7 @@ body {
         }
     }
     .main-content {
-        padding: 0 39.5px;
+        padding: 0 39.5px 150px;
         .screen {
             padding: 40px 45px;
             display: flex;
@@ -441,31 +441,27 @@ body {
                 }
             }
         }
-        .wizard {
-            margin-top: 50px;
+    }
+    .wizard {
+        a {
+            border: none;
             display: flex;
-            justify-content: flex-end;
-            margin-bottom: 25px;
-            a {
-                border: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 196px;
-                height: 61px;
-                color: white;
-                font-weight: 400;
-                background: $mainColor;
-                font-size: 20px;
-                border-radius: 21px;
-            }
-            .next {
-                margin-left: 32px;
-            }
-            .next:hover {
-                color: white;
-                cursor: pointer;
-            }
+            align-items: center;
+            justify-content: center;
+            width: 196px;
+            height: 61px;
+            color: white;
+            font-weight: 400;
+            background: $mainColor;
+            font-size: 20px;
+            border-radius: 21px;
+        }
+        .next {
+            margin-left: 32px;
+        }
+        .next:hover {
+            color: white;
+            cursor: pointer;
         }
     }
 }

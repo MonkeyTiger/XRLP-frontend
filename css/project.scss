@@ -17,7 +17,7 @@ body {
         }
     }
     .main-content {
-        padding: 0 39.5px;
+        padding: 0 39.5px 100px;
         .gallery-card {
             margin: 0 20px 40px;
             border: 7px solid white;
@@ -83,28 +83,26 @@ body {
                 line-height: 22px;
             }
         }
-        .wizard {
+    }
+    .wizard {
+        padding-right: 59.5px;
+        a {
+            border: none;
             display: flex;
-            justify-content: flex-end;
-            margin-bottom: 25px;
-            a {
-                border: none;
-                display: flex;
-                align-items: center;
-                width: 196px;
-                height: 61px;
-                color: white;
-                font-weight: 400;
-                background: $mainColor;
-                font-size: 20px;
-                border-radius: 21px;
-            }
-            a:hover {
-                color: white;
-            }
-            .next {
-                margin-left: 32px;
-            }
+            align-items: center;
+            width: 196px;
+            height: 61px;
+            color: white;
+            font-weight: 400;
+            background: $mainColor;
+            font-size: 20px;
+            border-radius: 21px;
+        }
+        a:hover {
+            color: white;
+        }
+        .next {
+            margin-left: 32px;
         }
     }
 }

@@ -1,5 +1,16 @@
 @import "./variable.scss";
 @import "./common.scss";
+.slick-slider {
+    margin-left: 30px;
+    padding-left: 15px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+    font-size: 35px;
+}
+
 body {
     .mb-36 {
         margin-bottom: 36px !important;
@@ -20,7 +31,7 @@ body {
         }
     }
     .main-content {
-        padding: 0 0 0 34.5px;
+        padding: 0 0 150px 34.5px;
         .title {
             font-size: 34px;
             .label {
@@ -28,6 +39,7 @@ body {
             }
         }
         .content {
+            width: 100%;
             display: flex;
             padding: 32px 0 51px;
             .upload {
@@ -50,7 +62,8 @@ body {
                 }
             }
             .model {
-                padding: 0 35px;
+                width: calc(100% - 350px);
+                padding: 0 0 0 35px;
                 .nav-tabs {
                     height: 70px;
                     display: flex;
@@ -82,17 +95,19 @@ body {
                     .tab-pane {
                         padding: 0;
                     }
-                    #hair {
+                    #hair,
+                    #facial-hair {
                         .model-type {
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
                             .content {
+                                width: calc(100% - 100px);
                                 padding: 28px 0;
-                                width: 1060px;
                                 flex-wrap: wrap;
                                 img {
-                                    margin: 0 15px;
+                                    margin: 0 10px;
+                                    height: 207px;
                                 }
                             }
                         }
@@ -105,62 +120,37 @@ body {
                             }
                             .content {
                                 padding: 0 15px;
+                                width: calc(100% - 100px);
                                 display: flex;
                                 justify-content: space-between;
-                                width: 1060px;
-                            }
-                        }
-                    }
-                    #facial-hair {
-                        .model-type {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            .content {
-                                padding: 28px 0;
-                                width: 1060px;
-                                flex-wrap: wrap;
                                 img {
-                                    margin: 0 15px;
+                                    margin: 0 10px;
+                                    width: 69px !important;
+                                    height: 72px;
                                 }
-                            }
-                        }
-                        .colors {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            .content {
-                                padding: 0 15px;
-                                display: flex;
-                                justify-content: space-between;
-                                width: 1060px;
                             }
                         }
                     }
                 }
             }
         }
-        .wizard {
-            padding: 0 30px;
+    }
+    .wizard {
+        a {
             display: flex;
-            justify-content: flex-end;
-            margin-bottom: 25px;
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: none;
-                width: 196px;
-                height: 61px;
-                color: white;
-                font-weight: 400;
-                background: $mainColor;
-                font-size: 20px;
-                border-radius: 21px;
-            }
-            .next {
-                margin-left: 32px;
-            }
+            align-items: center;
+            justify-content: center;
+            border: none;
+            width: 196px;
+            height: 61px;
+            color: white;
+            font-weight: 400;
+            background: $mainColor;
+            font-size: 20px;
+            border-radius: 21px;
+        }
+        .next {
+            margin-left: 32px;
         }
     }
 }
