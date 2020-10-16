@@ -29,10 +29,11 @@ a:focus {
 }
 
 .wizard {
-    background: white;
-    padding: 44px 39px 36px;
+    background: #F8F9FA;
+    padding: 3px 39px 3px;
     display: flex;
     justify-content: flex-end;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16);
     position: fixed;
     bottom: 0;
     width: calc(100% - 270px);
