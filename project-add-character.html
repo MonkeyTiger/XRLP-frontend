@@ -92,10 +92,12 @@
                 <div class="col-12 p-0">
                     <div class="content">
                         <div class="upload">
-                            <img src="./imgs/image-original-1.png" alt="">
                             <div>
-                                <input type="file">
-                                <button class="upload-file">Upload file</button>
+                                <img src="./imgs/image-original-1.png" alt="">
+                                <div class="toolbar">
+                                    <input type="file">
+                                    <button class="upload-file">Upload file</button>
+                                </div>
                             </div>
                         </div>
                         <div class="model">
@@ -216,11 +218,17 @@
                 }, {
                     breakpoint: 1500,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToShow: 4,
+                        slidesToScroll: 3
                     }
                 }, {
                     breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 850,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1

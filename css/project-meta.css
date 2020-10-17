@@ -392,16 +392,15 @@ body .main-content {
 
 body .main-content .screen {
   padding: 40px 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   height: 361px;
   background: url("../imgs/Screenshot -1.png");
   margin-bottom: 45px;
+}
+
+body .main-content .screen img {
+  margin: 0 30px;
+  height: 280px;
 }
 
 body .main-content .summery {
