@@ -564,7 +564,7 @@ body .main-content .search-box .search-bar input {
   font-size: 25px;
   font-weight: 300;
   margin-left: 12.5px;
-  width: 387.4px;
+  width: 100%;
   color: #707070;
   height: 34.5px;
   border: none;
@@ -581,6 +581,15 @@ body .main-content .search-box .search-result {
 body .main-content .search-box .search-result .result-item {
   border-bottom: 0.5px solid #707070;
   padding: 18.5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main-content .search-box .search-result .result-item > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

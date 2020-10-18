@@ -81,6 +81,15 @@ a[aria-expanded="true"] {
     background: #5B1A64;
 }
 
+a[aria-expanded="true"] {
+    border-left: 4px solid white!important;
+}
+
+.list-unstyled.collapse a,
+.list-unstyled.collapsing a {
+    border-left: 4px solid white!important;
+}
+
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
@@ -195,6 +204,7 @@ ul ul a {
 
 .wrapper.active #content {
     margin-left: 80px;
+    width: calc(100% - 80px);
 }
 
 .wrapper.active #content .navbar {
@@ -202,9 +212,9 @@ ul ul a {
 }
 
 .wrapper.active .wizard {
+    width: calc(100% - 80px);
     position: fixed;
     bottom: 0;
-    width: calc(100% - 80px);
 }
 
 @media (max-width: 768px) {
