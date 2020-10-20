@@ -48,6 +48,12 @@ body {
                         text-decoration: none;
                     }
                 }
+                li.active {
+                    a {
+                        color: $mainColor !important;
+                        font-weight: bold;
+                    }
+                }
             }
         }
         a.login {

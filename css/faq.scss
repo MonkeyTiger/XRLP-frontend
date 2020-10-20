@@ -48,6 +48,12 @@ body {
                         text-decoration: none;
                     }
                 }
+                li.active {
+                    a {
+                        color: $mainColor !important;
+                        font-weight: bold;
+                    }
+                }
             }
         }
         a.login {
@@ -75,11 +81,11 @@ body {
             text-align: center;
         }
         width: 100%;
-        height: 800px;
+        height: 435px;
         color: white;
         background: {
-            image: url('../imgs/shutterstock_-1.png');
-            size: cover;
+            image: url('../imgs/faq-header.png');
+            size: 100% 100%;
         }
         .title {
             font: {
@@ -90,28 +96,67 @@ body {
             line-height: 92px;
             margin-bottom: 52px;
         }
-        .description {
-            font-size: 30px;
-            line-height: 41px;
-            margin-bottom: 26px;
-        }
-        #watch-demo {
-            width: 242px;
-            height: 75px;
+    }
+    .section-1 {
+        padding: 53px 179px 56px;
+        #accordionExample {
+            background: none;
+            box-shadow: none !important;
             border: none;
-            border-radius: 21px;
-            background: $mainColor;
-            color: white;
-            margin-bottom: 16px;
-            font: {
-                weight: bold;
-                size: 25px;
+            .card {
+                background: #F9F9F9;
+                background: #F9F9F9;
+                box-shadow: 0 3px 6px #C5C5C5;
+                border: 2px solid #707070;
+                margin-bottom: 48px;
+                border-radius: 0;
+                .card-header {
+                    padding: 0;
+                    background: #F9F9F9 !important;
+                }
+                .card-body {
+                    padding: 66px 65px 49px;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
             }
-        }
-        .tip {
-            font: {
-                size: 12px;
-                font-weight: 300px;
+            width: 100%;
+            .collapsible-link {
+                padding-left: 86px;
+                padding-right: 86px;
+                height: 152px;
+                white-space: nowrap;
+                width: 50px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-decoration: none;
+                color: #707070 !important;
+                font: {
+                    size: 30px;
+                    weight: bold;
+                }
+                line-height: 37px;
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                text-align: left;
+            }
+            .collapsible-link::before {
+                content: '\f107';
+                position: absolute;
+                top: 50%;
+                right: 64px;
+                transform: translateY(-50%);
+                display: block;
+                font-family: 'FontAwesome';
+                font-size: 30px;
+            }
+            .collapsible-link[aria-expanded='true']::before {
+                content: '\f106';
+            }
+            .collapsible-link[aria-expanded='true'] {
+                background: $mainColor;
+                color: white !important;
             }
         }
     }
@@ -219,7 +264,8 @@ body {
     body {
         .header {
             background: {
-                image: url('../imgs/shutterstock_519669418.png');
+                image: url('../imgs/faq-header.png');
+                position: -100% 0;
                 size: cover;
             }
         }
@@ -350,40 +396,8 @@ body {
                 text-align: center;
             }
             width: 100%;
-            height: 800px;
+            height: 435px;
             color: white;
-            .title {
-                font: {
-                    size: 30px;
-                    weight: bold;
-                }
-                line-height: 37px;
-                margin-bottom: 9px;
-            }
-            .description {
-                font-size: 20px;
-                line-height: 27px;
-                margin-bottom: 26px;
-            }
-            #watch-demo {
-                width: 242px;
-                height: 75px;
-                border: none;
-                border-radius: 21px;
-                background: $mainColor;
-                color: white;
-                margin-bottom: 16px;
-                font: {
-                    weight: bold;
-                    size: 25px;
-                }
-            }
-            .tip {
-                font: {
-                    size: 12px;
-                    font-weight: 300px;
-                }
-            }
         }
         .section-5 {
             background: #EAE7E5;
@@ -446,6 +460,21 @@ body {
 }
 
 @media(max-width: 1440px) {
+    .section-1 {
+        padding: 53px 20px 56px !important;
+        .card-header {
+            button {
+                padding-left: 20px !important;
+                padding-right: 40px !important;
+            }
+            .collapsible-link::before {
+                right: 20px !important;
+            }
+        }
+        .card-body {
+            padding: 20px !important;
+        }
+    }
     .footer {
         padding: 53px 50px !important;
     }

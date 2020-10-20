@@ -133,6 +133,11 @@ body .menu .menu-items ul li a {
   text-decoration: none;
 }
 
+body .menu .menu-items ul li.active a {
+  color: #852D91 !important;
+  font-weight: bold;
+}
+
 body .menu a.login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,10 +170,10 @@ body .header {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 800px;
+  height: 435px;
   color: white;
-  background-image: url("../imgs/shutterstock_-1.png");
-  background-size: cover;
+  background-image: url("../imgs/faq-header.png");
+  background-size: 100% 100%;
 }
 
 body .header .col-12 {
@@ -182,27 +187,77 @@ body .header .title {
   margin-bottom: 52px;
 }
 
-body .header .description {
-  font-size: 30px;
-  line-height: 41px;
-  margin-bottom: 26px;
+body .section-1 {
+  padding: 53px 179px 56px;
 }
 
-body .header #watch-demo {
-  width: 242px;
-  height: 75px;
+body .section-1 #accordionExample {
+  background: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
   border: none;
-  border-radius: 21px;
-  background: #852D91;
-  color: white;
-  margin-bottom: 16px;
-  font-weight: bold;
-  font-size: 25px;
+  width: 100%;
 }
 
-body .header .tip {
-  font-size: 12px;
-  font-font-weight: 300px;
+body .section-1 #accordionExample .card {
+  background: #F9F9F9;
+  background: #F9F9F9;
+  -webkit-box-shadow: 0 3px 6px #C5C5C5;
+          box-shadow: 0 3px 6px #C5C5C5;
+  border: 2px solid #707070;
+  margin-bottom: 48px;
+  border-radius: 0;
+}
+
+body .section-1 #accordionExample .card .card-header {
+  padding: 0;
+  background: #F9F9F9 !important;
+}
+
+body .section-1 #accordionExample .card .card-body {
+  padding: 66px 65px 49px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+body .section-1 #accordionExample .collapsible-link {
+  padding-left: 86px;
+  padding-right: 86px;
+  height: 152px;
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #707070 !important;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 37px;
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+  text-align: left;
+}
+
+body .section-1 #accordionExample .collapsible-link::before {
+  content: '\f107';
+  position: absolute;
+  top: 50%;
+  right: 64px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  font-family: 'FontAwesome';
+  font-size: 30px;
+}
+
+body .section-1 #accordionExample .collapsible-link[aria-expanded='true']::before {
+  content: '\f106';
+}
+
+body .section-1 #accordionExample .collapsible-link[aria-expanded='true'] {
+  background: #852D91;
+  color: white !important;
 }
 
 body .section-5 {
@@ -320,7 +375,8 @@ body .footer .external-links a {
 
 @media (max-width: 620px) {
   body .header {
-    background-image: url("../imgs/shutterstock_519669418.png");
+    background-image: url("../imgs/faq-header.png");
+    background-position: -100% 0;
     background-size: cover;
   }
   body .menu {
@@ -471,37 +527,11 @@ body .footer .external-links a {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 800px;
+    height: 435px;
     color: white;
   }
   body .header .col-12 {
     text-align: center;
-  }
-  body .header .title {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 37px;
-    margin-bottom: 9px;
-  }
-  body .header .description {
-    font-size: 20px;
-    line-height: 27px;
-    margin-bottom: 26px;
-  }
-  body .header #watch-demo {
-    width: 242px;
-    height: 75px;
-    border: none;
-    border-radius: 21px;
-    background: #852D91;
-    color: white;
-    margin-bottom: 16px;
-    font-weight: bold;
-    font-size: 25px;
-  }
-  body .header .tip {
-    font-size: 12px;
-    font-font-weight: 300px;
   }
   body .section-5 {
     background: #EAE7E5;
@@ -557,6 +587,19 @@ body .footer .external-links a {
 }
 
 @media (max-width: 1440px) {
+  .section-1 {
+    padding: 53px 20px 56px !important;
+  }
+  .section-1 .card-header button {
+    padding-left: 20px !important;
+    padding-right: 40px !important;
+  }
+  .section-1 .card-header .collapsible-link::before {
+    right: 20px !important;
+  }
+  .section-1 .card-body {
+    padding: 20px !important;
+  }
   .footer {
     padding: 53px 50px !important;
   }

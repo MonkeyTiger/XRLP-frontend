@@ -133,6 +133,11 @@ body .menu .menu-items ul li a {
   text-decoration: none;
 }
 
+body .menu .menu-items ul li.active a {
+  color: #852D91 !important;
+  font-weight: bold;
+}
+
 body .menu a.login {
   display: -webkit-box;
   display: -ms-flexbox;
