@@ -1,6 +1,19 @@
 @import "./variable.scss";
 @import "./common.scss";
 body {
+    .slider-container .slick-arrow {
+        width: 50px;
+    }
+    .slider-container .slick-prev:before,
+    .slider-container .slick-next:before {
+        color: black;
+        font-size: 35px;
+    }
+    .slider-container .slick-list,
+    .slider-container .slick-track {
+        width: 237px;
+        height: 237px;
+    }
     #edit-zoom-modal {
         .icon {
             padding: 57px 0 61px;
@@ -154,12 +167,16 @@ body {
             background: #FAFAFA;
             padding: 18px 0 12px;
             .slider {
+                width: 80%;
+                height: 250px;
+                margin-left: 10%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 13px;
-                .slider-image {
-                    margin: 0 18px;
+                img {
+                    width: 237px !important;
+                    height: 237px !important;
                 }
             }
             .image-name {

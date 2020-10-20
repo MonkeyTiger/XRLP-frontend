@@ -1,11 +1,11 @@
 @import "./variable.scss";
 body * {
-    font - family: $mainFont !important;
+    font-family: $mainFont !important;
 }
 
-input: focus,
-textarea: focus,
-button: focus {
+input:focus,
+textarea:focus,
+button:focus {
     outline: none;
 }
 
@@ -14,11 +14,11 @@ button: focus {
     opacity: 1;
 }
 
-: -ms - input - placeholder {
+:-ms-input-placeholder {
     color: $mainColor;
 }
 
-:: - ms - input - placeholder {
+::-ms-input-placeholder {
     color: $mainColor;
 }
 
@@ -26,31 +26,31 @@ button {
     background: $mainColor;
     border: none;
     color: white;
-    border - radius: 21 px;
-    font - weight: bold;
+    border-radius: 21px;
+    font-weight: bold;
 }
 
-:: - webkit - scrollbar {
-    width: 11 px;
+::-webkit-scrollbar {
+    width: 11px;
 }
 
 
 /* Track */
 
-:: - webkit - scrollbar - track {
+::-webkit-scrollbar-track {
     background: #CBA6D0;
 }
 
 
 /* Handle */
 
-:: - webkit - scrollbar - thumb {
+::-webkit-scrollbar-thumb {
     background: #5B1A64;
 }
 
 
 /* Handle on hover */
 
-:: - webkit - scrollbar - thumb: hover {
+::-webkit-scrollbar-thumb:hover {
     background: #5B1A64;
 }

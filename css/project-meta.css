@@ -63,6 +63,22 @@ button {
   background: #5B1A64;
 }
 
+body .slider-container .slick-arrow {
+  width: 50px;
+}
+
+body .slider-container .slick-prev:before,
+body .slider-container .slick-next:before {
+  color: black;
+  font-size: 35px;
+}
+
+body .slider-container .slick-list,
+body .slider-container .slick-track {
+  width: 237px;
+  height: 237px;
+}
+
 body #edit-zoom-modal .icon {
   padding: 57px 0 61px;
   display: -webkit-box;
@@ -269,6 +285,9 @@ body #edit-character-modal .slider-container {
 }
 
 body #edit-character-modal .slider-container .slider {
+  width: 80%;
+  height: 250px;
+  margin-left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,8 +300,9 @@ body #edit-character-modal .slider-container .slider {
   margin-bottom: 13px;
 }
 
-body #edit-character-modal .slider-container .slider .slider-image {
-  margin: 0 18px;
+body #edit-character-modal .slider-container .slider img {
+  width: 237px !important;
+  height: 237px !important;
 }
 
 body #edit-character-modal .slider-container .image-name {

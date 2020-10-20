@@ -385,11 +385,11 @@
                 <div class="modal-body">
                     <div class="slider-container">
                         <div class="slider">
-                            <img src="./imgs/Icon ionic-ios-arrow-dropleft-circle.png" class="left">
-                            <div class="slider-image">
-                                <img src="./imgs/image-original.png" alt="">
-                            </div>
-                            <img src="./imgs/Icon ionic-ios-arrow-dropright-circle.png" class="right">
+                            <img src="./imgs/image-original.png" alt="">
+                            <img src="./imgs/image-original.png" alt="">
+                            <img src="./imgs/image-original.png" alt="">
+                            <img src="./imgs/image-original.png" alt="">
+                            <img src="./imgs/image-original.png" alt="">
                         </div>
                         <div class="image-name">
                             <span class="label mr-1">Character Name: </span>
@@ -412,6 +412,13 @@
     <script src="./js/sidebar.js"></script>
     <script src="./js/slick.min.js"></script>
     <script>
+        $(".slider").slick({
+            infinite: false,
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+
         $(".screen").slick({
             infinite: false,
             dots: false,
